@@ -14,12 +14,15 @@ def check(score):
         return "pass"
     else:
         return "fail"
+if __name__ == "__main__":
 
-user_input = input("Enter a score: ")
+    user_input = input("Enter a score: ")
 
-try:
-    student_score = float(user_input)
-    result = check(student_score)
-    print(result)
-except ValueError:
-    print("invalid input: Please enter a valid number.")
+    try:
+        student_score = float(user_input)
+        result = check(student_score)
+        print(result)
+    except ValueError:
+        print("invalid input: Please enter a valid number.")
+
+
